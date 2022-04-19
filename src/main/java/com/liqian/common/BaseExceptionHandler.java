@@ -13,8 +13,7 @@ public class BaseExceptionHandler {
     @ExceptionHandler
     public Result exception(Exception e){
         log.error("异常信息：{}",e.getMessage());
-        System.out.println("master");
-        System.out.println("hot-fix");
+        System.out.println("hahaha");
         return Result.getFailure().setData(e.getMessage());
     }
 }
