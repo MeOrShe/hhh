@@ -14,6 +14,7 @@ public class BaseExceptionHandler {
     public Result exception(Exception e){
         log.error("异常信息：{}",e.getMessage());
         System.out.println("xixixi");
+        System.out.println("liqian");
         return Result.getFailure().setData(e.getMessage());
     }
 }
